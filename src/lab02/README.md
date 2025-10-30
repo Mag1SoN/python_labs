@@ -49,7 +49,7 @@ except TypeError:
 ```
 ![Task 1.3](../../images/lab02/01_3.png)
 
-## Задание 2
+## Задание B
 ```python
 def transpose(mat: list[list[float | int]]) -> list[list]:
     if not mat:
@@ -109,7 +109,7 @@ except ValueError:
 
 ![Task 2.3](../../images/lab02/02_3.png)
 
-## Задание 3
+## Задание C
 ```python
 def format_record(rec: tuple[str, str, float]) -> str:
     if len(rec) != 3:
