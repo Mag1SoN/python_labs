@@ -7,6 +7,7 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
     num_cols = len(mat[0])
     return [[mat[r][c] for r in range(num_rows)] for c in range(num_cols)]
 
+
 # print(transpose([[1, 2, 3]]))
 # print(transpose([[1], [2], [3]]))
 # print(transpose([[1, 2], [3, 4]]))
@@ -23,6 +24,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
         raise ValueError
     return [sum(row) for row in mat]
 
+
 # print(row_sums([[1, 2, 3], [4, 5, 6]]))
 # print(row_sums([[-1, 1], [10, -10]]))
 # print(row_sums([[0, 0], [0, 0]]))
@@ -38,6 +40,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         raise ValueError
     num_cols = len(mat[0])
     return [sum(mat[r][c] for r in range(len(mat))) for c in range(num_cols)]
+
 
 # print(col_sums([[1, 2, 3], [4, 5, 6]]))
 # print(col_sums([[-1, 1], [10, -10]]))

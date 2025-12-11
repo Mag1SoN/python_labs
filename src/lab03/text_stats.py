@@ -1,9 +1,9 @@
 from python_labs.src.lib.text import normalize, tokenize, count_freq, top_n
 
-text = ''
+text = ""
 try:
     while True:
-        text += input() + ' '
+        text += input() + " "
 except EOFError:
     pass
 
